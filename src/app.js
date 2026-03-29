@@ -1,5 +1,5 @@
 import express from "express"
-const PORT = process.env.PORT || 5500
+import config from "./config.js"
 
 const app = express()
 
@@ -14,7 +14,7 @@ app.get("/health", (req, res) => {
 })
 
 
-app.listen(port, () => {
-    console.log(`App is running on ${port}`)
+app.listen(config.PORT, () => {
+    console.log(`App is running on ${config.PORT}`)
 })
 

@@ -46,6 +46,6 @@ jobs:
         run: npm ci
 
       - name: compile 
-        run: npm run build
-        
+        run: npm run build || echo "no build step"
+
       

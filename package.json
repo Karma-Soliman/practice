@@ -14,7 +14,6 @@
   "author": "",
   "type": "module",
   "main": "src/app.js",
-  
   "lint-staged": {
     "*.js": [
       "eslint --fix",
@@ -24,7 +23,8 @@
   "scripts": {
     "test": "node --test",
     "lint": "eslint .",
-    "format":"prettier --write",
+    "build": "echo \"No build needed\"",
+    "format": "prettier --write",
     "dev": "node src/app.js",
     "prepare": "husky install"
   },
